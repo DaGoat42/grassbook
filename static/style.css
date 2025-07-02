@@ -26,7 +26,8 @@ main {
     flex-grow: 1;
 
     display: flex;
-    width: 75%;
+    width: 90%;
+    max-width: 800px;
 }
 
 footer {
@@ -41,6 +42,15 @@ footer {
     display: flex;
     width: 100%;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post {
+    background: var(--pico-card-background-color, #ffffff);
+    border: 1px solid var(--pico-border-color, #e0e0e0);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
@@ -48,6 +58,22 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 0.75rem;
+    color: var(--pico-muted-color, #666666);
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-title {
+    margin-bottom: 0.5rem;
+    color: var(--pico-color, #000000);
+}
+
+.post-body {
+    line-height: 1.5;
+    color: var(--pico-color, #000000);
 }
 
 .center {
