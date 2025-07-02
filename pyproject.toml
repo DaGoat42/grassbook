@@ -6,5 +6,6 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "flask>=3.1.1",
+    "humanize>=4.12.3",
     "supabase>=2.16.0",
 ]

@@ -2,16 +2,20 @@
 <html lang="en">
     <head>
         <title>Welcome to Grassbook</title>
-        {% include("_commonhead.html") %}
+        {% include "_commonhead.html" %}
     </head>
     <body class="center">
         <header>
             <h1>Grassbook</h1>
-            {% include("_navigation.html") %}
+            {% include "_navigation.html" %}
             <hr />
         </header>
         <main>
-            
+            <div class="posts-container">
+                {% for post in posts %}
+                    {% include "_postcard.html" %}
+                {% endfor %}
+            </div>
         </main>
         <footer>
             <hr />
